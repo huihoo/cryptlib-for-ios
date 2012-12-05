@@ -1,0 +1,22 @@
+//
+// Prefix header for all source files of the 'crytest' target in the 'crytest' project
+//
+
+#import <Availability.h>
+
+
+#define INC_ALL
+#define  __TANDEMNSK__
+#define  __UNIX__ 
+#define NDEBUG 
+#define DATA_LITTLEENDIAN 
+//#define HAS_ODBC 
+//#define HAS_LDAP 
+#define HAS_RECURSIVE_MUTEX 
+#define HAS_ROBUST_MUTEX 
+#define OSVERSION  1
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
