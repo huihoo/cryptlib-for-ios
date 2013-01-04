@@ -312,6 +312,7 @@
 		1F8A3488166465D6007ED66E /* write.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A3348166465D6007ED66E /* write.c */; };
 		1F8A348A166465D6007ED66E /* xmk.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A334A166465D6007ED66E /* xmk.c */; };
 		1F8A348B166465D6007ED66E /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A334B166465D6007ED66E /* zutil.c */; };
+		1F8E4ED9168046A100905663 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8E4ED8168046A100905663 /* CFNetwork.framework */; };
 		1F8F899A16635A0600F2AD23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8F899916635A0600F2AD23 /* UIKit.framework */; };
 		1F8F899C16635A0600F2AD23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8F899B16635A0600F2AD23 /* Foundation.framework */; };
 		1F8F899E16635A0600F2AD23 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8F899D16635A0600F2AD23 /* CoreGraphics.framework */; };
@@ -739,6 +740,7 @@
 		1F8A34FA166465E7007ED66E /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
 		1F8A34FF1664A03A007ED66E /* pgp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pgp.h; sourceTree = "<group>"; };
 		1F8A35001664A07D007ED66E /* pgp_rw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pgp_rw.h; sourceTree = "<group>"; };
+		1F8E4ED8168046A100905663 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		1F8F899516635A0600F2AD23 /* cryptlib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cryptlib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8F899916635A0600F2AD23 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1F8F899B16635A0600F2AD23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -759,6 +761,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F8E4ED9168046A100905663 /* CFNetwork.framework in Frameworks */,
 				1F8F899A16635A0600F2AD23 /* UIKit.framework in Frameworks */,
 				1F8F899C16635A0600F2AD23 /* Foundation.framework in Frameworks */,
 				1F8F899E16635A0600F2AD23 /* CoreGraphics.framework in Frameworks */,
@@ -1211,6 +1214,7 @@
 		1F8F899816635A0600F2AD23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F8E4ED8168046A100905663 /* CFNetwork.framework */,
 				1F8F899916635A0600F2AD23 /* UIKit.framework */,
 				1F8F899B16635A0600F2AD23 /* Foundation.framework */,
 				1F8F899D16635A0600F2AD23 /* CoreGraphics.framework */,

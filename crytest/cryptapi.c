@@ -52,6 +52,7 @@ static int cmdCertMgmt( void *stateInfo, COMMAND_INFO *cmd )
 	/* Perform basic server-side error checking */
 	if( !isHandleRangeValid( cmd->arg[ 0 ] ) )
 		return( CRYPT_ARGERROR_OBJECT );
+        
 	if( cmd->arg[ 1 ] < CRYPT_CERTACTION_FIRST_USER || \
 		cmd->arg[ 1 ] > CRYPT_CERTACTION_LAST_USER )
 		return( CRYPT_ARGERROR_VALUE );
