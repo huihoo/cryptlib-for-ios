@@ -56,6 +56,15 @@
 //     NSLog(@"cryptEnd status: %d",status);
     
     //新的方式尝试
+      //新增加一个步骤，建立ssl session 
+    CRYPT_SESSION cryptSession;
+    /* Create the session */ 
+    status = cryptCreateSession( &cryptSession, CRYPT_UNUSED, CRYPT_SESSION_SSL);
+    
+    /* Add the server name and activate the session */ 
+    status = cryptSetAttributeString( cryptSession, CRYPT_SESSINFO_SERVER_NAME,"219.143.68.91", 13 ); 
+    status = cryptSetAttribute( cryptSession, CRYPT_SESSINFO_ACTIVE, 1 );
+    
     CRYPT_CONTEXT pubKeyContext, cryptContext; 
     void *encryptedKey; 
     int encryptedKeyLength;
